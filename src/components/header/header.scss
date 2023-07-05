@@ -1,0 +1,89 @@
+.Header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.35);
+  height: 80px;
+  max-width: 1920px;
+}
+
+.link {
+  text-decoration: none;
+  margin: 0px 14px;
+
+  h1 {
+    color: green;
+  }
+}
+
+.mid-list {
+  display: flex;
+  align-items: center;
+
+  ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+    li {
+      list-style-type: none;
+      color: rgb(30, 30, 30);
+
+      &:hover {
+        color: green;
+      }
+    }
+
+    .sale {
+      color: red;
+    }
+  }
+}
+
+form {
+  display: flex;
+
+  .input {
+    width: 280px;
+    height: 35px;
+    padding: 4px;
+  }
+
+  .search-button {
+    background-color: green;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+        font-size: 1.3rem;
+    }
+  }
+}
+
+.right-list {
+  display: flex;
+
+  *:hover {
+    color: green;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70px;
+    margin: 0px 5px;
+    cursor: pointer;
+
+    i {
+      font-size: 22px;
+    }
+
+    span {
+      font-size: 14px;
+    }
+  }
+}

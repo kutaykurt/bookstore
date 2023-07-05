@@ -1,0 +1,85 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Buch 1",
+      "author": "Autor 1",
+      "description": "Beschreibung des Buches 1",
+      "publisher": "Verlag 1",
+      "publicationDate": "2022-01-01",
+      "pages": 300,
+      "language": "Deutsch",
+      "formats": [
+        {
+          "type": "Taschenbuch",
+          "price": 19.99,
+          "dimensions": "15x23 cm",
+          "weight": "400 g",
+          "isbn": "978-3-123456-78-9"
+        },
+        {
+          "type": "E-Book",
+          "price": 9.99,
+          "fileSize": "2 MB",
+          "format": "PDF",
+          "isbn": "978-3-123456-79-6"
+        }
+      ],
+      "categories": ["Horror", "Thriller"]
+    },
+    {
+      "id": 2,
+      "title": "Buch 2",
+      "author": "Autor 2",
+      "description": "Beschreibung des Buches 2",
+      "publisher": "Verlag 2",
+      "publicationDate": "2021-12-15",
+      "pages": 250,
+      "language": "Englisch",
+      "formats": [
+        {
+          "type": "Taschenbuch",
+          "price": 14.99,
+          "dimensions": "12x18 cm",
+          "weight": "250 g",
+          "isbn": "978-1-234567-89-0"
+        },
+        {
+          "type": "E-Book",
+          "price": 7.99,
+          "fileSize": "1.5 MB",
+          "format": "EPUB",
+          "isbn": "978-1-234567-90-6"
+        }
+      ],
+      "categories": ["Horror", "Erotik"]
+    },
+    {
+      "id": 3,
+      "title": "Buch 3",
+      "author": "Autor 3",
+      "description": "Beschreibung des Buches 3",
+      "publisher": "Verlag 3",
+      "publicationDate": "2023-03-10",
+      "pages": 400,
+      "language": "Französisch",
+      "formats": [
+        {
+          "type": "Taschenbuch",
+          "price": 24.99,
+          "dimensions": "20x25 cm",
+          "weight": "600 g",
+          "isbn": "978-2-345678-90-1"
+        },
+        {
+          "type": "E-Book",
+          "price": 12.99,
+          "fileSize": "3 MB",
+          "format": "MOBI",
+          "isbn": "978-2-345678-91-8"
+        }
+      ],
+      "categories": ["Science Fiction", "Thriller"]
+    }
+  ]
+}
