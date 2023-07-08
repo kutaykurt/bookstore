@@ -1,0 +1,540 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Fourth Wing – Flammengeküsst",
+      "picture": "https://images.thalia.media/00/-/210c78315cd94e76b73af4c5b117a6d2/fourth-wing-flammengekuesst-gebundene-ausgabe-rebecca-yarros.jpeg",
+      "author": "Rebecca Yarros",
+      "description": "Violets Traum, Schriftgelehrte am renommierten Basgiath War College zu werden, zerplatzt jäh, da sie als Tochter der Generalin am Auswahlverfahren der Drachenreiter teilnehmen muss. Das erste Jahr wird nicht einmal die Hälfte aller Bewerber überleben, denn Drachen binden sich nicht an schwache Menschen, sie fackeln sie nieder. Die meisten Kadetten wollen Violet allein aufgrund ihrer Herkunft niederstrecken - besonders Xaden, der mächtigste und skrupelloseste unter den Geschwaderführern. Und ohne Frage auch der attraktivste. Ausgerechnet ihm wird Violet unterstellt. Sie wird jeden Vorteil nutzen müssen, wenn sie überleben will. Denn am Basgiath War College haben alle eine Agenda und es gibt nur zwei Wege hinaus: den Abschluss machen oder sterben.",
+      "publisher": "dtv",
+      "publicationDate": "2023-06-15",
+      "pages": 768,
+      "language": "Deutsch",
+      "formats": [
+        {
+          "type": "Taschenbuch",
+          "price": 24.00,
+          "dimensions": "15x23 cm",
+          "weight": "400 g",
+          "isbn": "978-3-423-28340-3"
+        },
+        {
+          "type": "E-Book",
+          "price": 16.99,
+          "fileSize": "2 MB",
+          "format": "PDF",
+          "isbn": "978-3-123456-79-6"
+        }
+      ],
+      "categories": ["Fantasy", "Roman"]
+    },
+    {
+      "id": 2,
+      "title": "Vergissmeinnicht - Was bisher verloren war",
+      "picture": "https://images.thalia.media/00/-/0f9cc2f27ffb4c9c989e965fac3d3e9a/vergissmeinnicht-was-bisher-verloren-war-gebundene-ausgabe-kerstin-gier.jpeg",
+      "author": "Kerstin Gier",
+      "description": "Mit Feen abzuhängen, durch Portale in eine Parallelwelt zu spazieren und Superkräfte zu besitzen, daran hat Quinn sich mittlerweile gewöhnt. Blöd nur, dass ihn jedes Geheimnis, das er aufdeckt, vor neue Rätsel stellt. Ohne Matilda und ihre ganz spezielle Art, den Dingen auf den Grund zu gehen, wäre er völlig aufgeschmissen. Dass er sie doch eigentlich vor den Gefahren des Saums beschützen wollte, hindert Matilda nicht daran, sich kopfüber ins Abenteuer zu stürzen. Denn die beiden müssen dringend ein paar Fragen klären: Steckt eine Geheimgesellschaft hinter dem Tod von Quinns Vater? Wie bändigt man eine Sphinx - und erst die intrigante neue Mitschülerin? Und kann man überhaupt verliebt sein, wenn man ständig in Lebensgefahr gerät?",
+      "publisher": "Fischer",
+      "publicationDate": "2021-12-15",
+      "pages": 528,
+      "language": "Deutsch",
+      "formats": [
+        {
+          "type": "Taschenbuch",
+          "price": 22.00,
+          "dimensions": "12x18 cm",
+          "weight": "250 g",
+          "isbn": "978-3-949465-09-3"
+        },
+        {
+          "type": "E-Book",
+          "price": 16.99,
+          "fileSize": "1.5 MB",
+          "format": "EPUB",
+          "isbn": "978-1-234567-90-6"
+        }
+      ],
+      "categories": ["Fantasy", "Roman"]
+    },
+    {
+      "id": 3,
+      "title": "Twisted Hate",
+      "picture": "https://images.thalia.media/00/-/a63bbeffb4084c28bd8f2d20be732d57/twisted-hate-taschenbuch-ana-huang.jpeg",
+      "author": "Ana Huang",
+      "description": "Hass beschreibt nicht annähernd, was Jules Ambrose für Josh Chen und sein viel zu großes Ego empfindet. Dem heißen Doktor ergeht es Ähnlich, Jules‘ vorlaute Art nervt ihn gehörig. Aber Jules ist die beste Freundin seiner Schwester, und so ist es unvermeidbar, dass sie sich ständig über den Weg laufen. Und doch ist da noch etwas anderes, ein Prickeln, das sie einfach nicht leugnen können. Nach einer unvergesslichen Nacht treffen sie eine Vereinbarung: Sie werden zu Feinden mit gewissen Vorzügen. Die Regeln sind einfach: keine Eifersucht, keine Bedingungen, kein Verlieben. Jules und Josh merken allerdings schnell, wie süchtig sie danach sind, dass zwischen ihnen die Funken ̶ und die Fetzen ̶ fliegen ...",
+      "publisher": "LYX",
+      "publicationDate": "2023-06-30",
+      "pages": 592,
+      "language": "Deutsch",
+      "formats": [
+        {
+          "type": "Taschenbuch",
+          "price": 14.00,
+          "dimensions": "20x25 cm",
+          "weight": "600 g",
+          "isbn": "978-3-7363-1982-0"
+        },
+        {
+          "type": "E-Book",
+          "price": 9.99,
+          "fileSize": "3 MB",
+          "format": "MOBI",
+          "isbn": "978-2-345678-91-8"
+        }
+      ],
+      "categories": ["Science Fiction", "Thriller"]
+    },
+    {
+      "id": 4,
+      "title": "Elternabend",
+      "picture": "https://images.thalia.media/00/-/b936eda3283642b8a914ff4a48f96306/elternabend-taschenbuch-sebastian-fitzek.jpeg",
+      "author": "Sebastian Fitzek",
+      "description": "Sascha Nebel hat sich zur falschen Zeit am falschen Ort das falsche Auto für einen Diebstahl ausgesucht. Kaum, dass er hinter dem Steuer eines Geländewagens Platz genommen hat, zieht eine Horde demonstrierender Klimaaktivisten durch die Straße. Allen voran eine junge Frau, die den SUV mit einer Baseballkeule demoliert. Als die Polizei auf der Bildfläche erscheint, ergreifen Sascha und die Unbekannte die Flucht und platzen in den Elternabend einer 5. Klasse. Um die Nacht nicht in Polizeigewahrsam zu verbringen, bleibt ihnen keine andere Wahl: Sie müssen in die Rolle von Christin und Lutz Schmolke schlüpfen, den Eltern des 11jährigen Hector, die bislang jede Schulveranstaltung versäumten. Zwei wildfremde Menschen, zwischen denen kaum größeres Streitpotential herrschen könnte, geben sich als Vater und Mutter eines ihnen völlig unbekannten Kindes aus. Dabei ist die Tatsache, dass Hector der größte Rüpel der Schule ist, sehr schnell ihr kleinstes Problem …",
+      "publisher": "Verlag 3",
+      "publicationDate": "2023-04-26",
+      "pages": 336,
+      "language": "Deutsch",
+      "formats": [
+        {
+          "type": "Taschenbuch",
+          "price": 16.99,
+          "dimensions": "20x25 cm",
+          "weight": "600 g",
+          "isbn": "978-3-426-28413-1"
+        },
+        {
+          "type": "E-Book",
+          "price": 12.99,
+          "fileSize": "3 MB",
+          "format": "MOBI",
+          "isbn": "978-2-345678-91-8"
+        }
+      ],
+      "categories": ["Komödie", "Roman"]
+    },
+    {
+      "id": 5,
+      "title": "Kingdom of the Wicked – Die Göttin der Rache",
+      "picture": "https://images.thalia.media/00/-/21fe9b8c2126490aacfe4ee95f8ff56f/kingdom-of-the-wicked-die-goettin-der-rache-taschenbuch-kerri-maniscalco.jpeg",
+      "author": "Kerri Maniscalco",
+      "description": "Noch immer ist die junge Hexe Emilia in der Hölle und muss sich nun den Geistern ihrer Vergangenheit stellen: Sie hat herausgefunden, dass ihre eigene Schwester offenbar ganz und gar nicht die Person ist, für die sie sie gehalten hat. Inmitten von Hexen, Dämonen und Gestaltwandlern muss Emilia schnell mit der neuen Situation zurechtkommen, bevor sie in den Intrigen der Sieben Kreise untergeht. Gleichzeitig sehnt sie sich danach, endlich Wrath, den verführerischen Fürsten des Zorns, ganz für sich zu erobern, mit Herz und Seele. Doch kann der rätselhafte Dämon ihr geben, was sie sich wünscht?",
+      "publisher": "Verlag 3",
+      "publicationDate": "2023-06-29",
+      "pages": 448,
+      "language": "Deutsch",
+      "formats": [
+        {
+          "type": "Taschenbuch",
+          "price": 17.00,
+          "dimensions": "20x25 cm",
+          "weight": "600 g",
+          "isbn": "978-3-492-70683-4"
+        },
+        {
+          "type": "E-Book",
+          "price": 12.99,
+          "fileSize": "3 MB",
+          "format": "MOBI",
+          "isbn": "978-2-345678-91-8"
+        }
+      ],
+      "categories": ["Fantasy", "Thriller", "Horror", "Roman"]
+    },
+    {
+      "id": 6,
+      "title": "Zerbrich uns. Nicht.",
+      "picture": "https://images.thalia.media/00/-/af8c2104a48c4ac19464b0ecad4c0b8a/zerbrich-uns-nicht-taschenbuch-laura-kneidl.jpeg",
+      "author": "Laura Kneidl",
+      "description": "Nach fünf Jahren ist Gavin plötzlich zurück in Aprils Leben. Damals war er der Junge, an den sie ihr Herz verlor, heute ist er der Mann, dem sie es ein zweites Mal geschenkt hat. April glaubte, mit Gavin endlich die Liebe gefunden zu haben, nach der sie sich sehnte. Doch was so perfekt schien, endete für sie erneut in Liebeskummer. Ihr bleibt keine andere Wahl, als ihre Gefühle für Gavin endgültig zu vergessen. Das ist allerdings gar nicht so leicht, denn unerwartet müssen die beiden für ein Projekt zusammenarbeiten, und Gavins Anblick lässt Aprils verräterisches Herz immer noch viel zu schnell schlagen. Nur wie kann sie ihm verzeihen, wenn sie ihm nicht mehr vertraut?",
+      "publisher": "LYX",
+      "publicationDate": "2023-06-28",
+      "pages": 480,
+      "language": "Deutsch",
+      "formats": [
+        {
+          "type": "Taschenbuch",
+          "price": 14.00,
+          "dimensions": "20x25 cm",
+          "weight": "600 g",
+          "isbn": "978-2-345678-90-1"
+        },
+        {
+          "type": "E-Book",
+          "price": 12.99,
+          "fileSize": "3 MB",
+          "format": "MOBI",
+          "isbn": "978-3-7363-1933-2"
+        }
+      ],
+      "categories": ["Romantik", "Roman"]
+    },
+    {
+      "id": 7,
+      "title": "Bretonischer Ruhm",
+      "picture": "https://images.thalia.media/00/-/8f435f0d3fa04d928a1ef3462dbd1bbe/bretonischer-ruhm-taschenbuch-jean-luc-bannalec.jpeg",
+      "author": "Jean-Luc Bannalec",
+      "description": "Kommissar Dupin und Claire verbringen ihre Flitterwochen an der Loire, im traumhaften Pays de Retz. Von Weingut zu Weingut, von einem kulinarischen Hochgenuss zum nächsten soll die Reise gehen. So zumindest der Plan. Doch dann wird ein bekannter Winzer ermordet, der Ex-Mann einer Freundin von Claire. Sie zählt auf Dupins Unterstützung. Oder ist sie am Ende in die Sache verwickelt?",
+      "publisher": "Kiepenheuer & Witsch",
+      "publicationDate": "2023-06-21",
+      "pages": 336,
+      "language": "Deutsch",
+      "formats": [
+        {
+          "type": "Taschenbuch",
+          "price": 18.00,
+          "dimensions": "20x25 cm",
+          "weight": "600 g",
+          "isbn": "978-3-462-05404-0"
+        },
+        {
+          "type": "E-Book",
+          "price": 14.99,
+          "fileSize": "3 MB",
+          "format": "MOBI",
+          "isbn": "978-2-345678-91-8"
+        }
+      ],
+      "categories": ["Thriller"]
+    },
+    {
+      "id": 8,
+      "title": "Buch 3",
+      "picture": "https://images.thalia.media/00/-/13ec5aba51aa4df38aad2cefae41427b/atlas-die-geschichte-von-pa-salt-gebundene-ausgabe-lucinda-riley.jpeg",
+      "author": ["Lucinda Riley", "Harry Whittaker"],
+      "description": "Paris, 1928. Ein Junge wird gerade noch rechtzeitig entdeckt, bevor er stirbt, und von einer Familie aufgenommen. Er ist klug und liebenswert, und er entfaltet seine Talente in dem neuen Zuhause. Hier wird ihm ein Leben ermöglicht, von dem er nicht zu träumen gewagt hätte. Doch er weigert sich, einen Hinweis darauf zu geben, wer er wirklich ist. Als er zu einem jungen Mann heranwächst, verliebt er sich und besucht das berühmte Pariser Konservatorium. Die Schrecken seiner Vergangenheit kann er darüber beinahe vergessen, ebenso wie das Versprechen, das er einst geschworen hat, einzulösen. Aber Unheil ballt sich zusammen über Europa, und niemand ist mehr in Sicherheit. Tief in seinem Herzen weiß er, dass die Zeit kommen wird und er wieder fliehen muss.",
+      "publisher": "Goldmann",
+      "publicationDate": "2023-05-11",
+      "pages": 800,
+      "language": "Deutsch",
+      "formats": [
+        {
+          "type": "Taschenbuch",
+          "price": 24.00,
+          "dimensions": "20x25 cm",
+          "weight": "600 g",
+          "isbn": "978-3-442-31567-3"
+        },
+        {
+          "type": "E-Book",
+          "price": 19.99,
+          "fileSize": "3 MB",
+          "format": "MOBI",
+          "isbn": "978-2-345678-91-8"
+        }
+      ],
+      "categories": ["Fantasy", "Roman"]
+    },
+    {
+      "id": 9,
+      "title": "Stay Here - New England School of Ballet",
+      "picture": "https://images.thalia.media/00/-/bee7c49fa45c4529b8f1c3bbe429be35/stay-here-new-england-school-of-ballet-taschenbuch-anna-savas.jpeg",
+      "author": "Anna Savas",
+      "description": "Seit dem Tod ihrer Eltern hat Rayne Bellamy jeden Halt verloren. In der Hoffnung, sich so ihrer Mutter näher zu fühlen, zieht sie nach Boston und beginnt ein Studium an der New England School of Ballet. Dort trifft sie Easton, der sie versteht wie niemand sonst auf der Welt. Doch sie kann die Gefühle, die er in ihr weckt, nicht zulassen, auch wenn sie sich tiefer und echter anfühlen als alles, was sie zuvor empfunden hat. Denn eigentlich ist sie doch nur nach Boston gekommen, um zu tanzen und den Traum ihrer Mutter zu verwirklichen ̶ und nicht, um sich in den Sänger zu verlieben, der mit seiner Band kurz vor dem Durchbruch steht. Aber je tiefer sie sich in Eastons Musik verliert, desto stärker gerät ihre eigene Welt ins Wanken ...",
+      "publisher": "LYX",
+      "publicationDate": "2023-06-30",
+      "pages": 496,
+      "language": "Deutsch",
+      "formats": [
+        {
+          "type": "Taschenbuch",
+          "price": 14.00,
+          "dimensions": "20x25 cm",
+          "weight": "600 g",
+          "isbn": "978-3-7363-1926-4"
+        },
+        {
+          "type": "E-Book",
+          "price": 9.99,
+          "fileSize": "3 MB",
+          "format": "MOBI",
+          "isbn": "978-2-345678-91-8"
+        }
+      ],
+      "categories": ["Drama", "Roman"]
+    },
+    {
+      "id": 10,
+      "title": "Scheiß-Angst",
+      "picture": "https://images.thalia.media/00/-/4030adce3ce040f894fe637f948c4121/scheiss-angst-taschenbuch-kikidoyouloveme.jpeg",
+      "author": ["Kikidoyouloveme", "Karina Spiess"],
+      "description": "Karina alias Kiki ist online als Kikidoyouloveme unterwegs und hat sich innerhalb kürzester Zeit eine riesige Community aufgebaut. Die selbst ernannte »Kackfluencerin« leidet unter dem Reizdarm-Syndrom sowie Panikattacken und teilt auf ihren Kanälen alles rund um Stuhlgang, Durchfall, Blähungen, Darmerkrankungen, mentale Gesundheit & Co. Ihr Ziel: diese in der Gesellschaft so schambehafteten Themen zu enttabuisieren.",
+      "publisher": "Community Editions",
+      "publicationDate": "2023-06-30",
+      "pages": 224,
+      "language": "Deutsch",
+      "formats": [
+        {
+          "type": "Taschenbuch",
+          "price": 19.00,
+          "dimensions": "20x25 cm",
+          "weight": "600 g",
+          "isbn": "978-3-96096-944-0"
+        },
+        {
+          "type": "E-Book",
+          "price": 17.99,
+          "fileSize": "3 MB",
+          "format": "MOBI",
+          "isbn": "978-2-345678-91-8"
+        }
+      ],
+      "categories": ["Komödie"]
+    },
+    {
+      "id": 11,
+      "title": "The Unhoneymooners – Sie können sich nicht ausstehen und fliegen gemeinsam in die Flitterwochen",
+      "picture": "https://images.thalia.media/00/-/d9a8b601f4304b31953abfcd737a7452/the-unhoneymooners-sie-koennen-sich-nicht-ausstehen-und-fliegen-gemeinsam-in-die-flitterwochen-taschenbuch-christina-lauren.jpeg",
+      "author": "Christina Lauren",
+      "description": "Olive Torres ist der Pechvogel der Familie: Von unerklärlichen Missgeschicken verfolgt scheint ihr Leben geradezu absurd verhext. Ganz anders als das Leben ihrer Zwillingsschwester, die sogar ihre gesamte Hochzeit durch Gewinnspiele und perfekt getimte Rabattcoupons finanzieren konnte. Aber Olive gönnt ihrer Schwester das ganze Glück, und sie freut sich auf die Hochzeit. Es gibt allerdings jemanden, der ihr die Vorfreude verdirbt: ihr Erzfeind, Ethan Thomas, der Trauzeuge ihres zukünftigen Schwagers. ",
+      "publisher": "Everlove",
+      "publicationDate": "2023-06-01",
+      "pages": 368,
+      "language": "Deutsch",
+      "formats": [
+        {
+          "type": "Taschenbuch",
+          "price": 15.00,
+          "dimensions": "20x25 cm",
+          "weight": "600 g",
+          "isbn": "978-3-492-06408-8"
+        },
+        {
+          "type": "E-Book",
+          "price": 12.99,
+          "fileSize": "3 MB",
+          "format": "MOBI",
+          "isbn": "978-2-345678-91-8"
+        }
+      ],
+      "categories": ["Komödie", "Roman"]
+    },
+    {
+      "id": 12,
+      "title": "If he had been with me",
+      "picture": "https://images.thalia.media/00/-/b6f3bb1781024ec0af854cd5cef31ec4/if-he-had-been-with-me-taschenbuch-laura-nowlin.jpeg",
+      "author": "Laura Nowlin",
+      "description": "Auf einer regennassen Straße soll sich Finns und Autumns Schicksal für immer entscheiden. In dem Moment, als das Auto von der Fahrbahn abkommt. Doch eigentlich beginnt Autumns und Finns Geschichte viel früher: Schon ihre Mütter sind beste Freundinnen und so wachsen sie Tür an Tür auf, verbringen jede freie Minute gemeinsam, kennen den anderen besser als sich selbst. Bis aus ihrer Freundschaft etwas anderes wird. Nur kann Autumn sich diese tiefen Gefühle nicht eingestehen. Stattdessen versucht sie, Finn zu vergessen. Doch wie soll sie das schaffen, wenn ihr Herz so verräterisch schlägt, sobald sich ihre Blicke treffen? Und wie soll sie das schaffen, wenn niemand jemals Finns Platz in ihrem Herzen einnehmen kann?",
+      "publisher": "Verlag 3",
+      "publicationDate": "2023-06-14",
+      "pages": 400,
+      "language": "Deutsch",
+      "formats": [
+        {
+          "type": "Taschenbuch",
+          "price": 16.00,
+          "dimensions": "20x25 cm",
+          "weight": "600 g",
+          "isbn": "978-3-328-11098-9"
+        },
+        {
+          "type": "E-Book",
+          "price": 9.99,
+          "fileSize": "3 MB",
+          "format": "MOBI",
+          "isbn": "978-2-345678-91-8"
+        }
+      ],
+      "categories": ["Romantik", "Drama", "Roman"]
+    },
+    {
+      "id": 13,
+      "title": "Dreamland Billionaires - The Fine Print",
+      "picture": "https://images.thalia.media/00/-/f96a0e0b91a349ce97abecf848273f04/dreamland-billionaires-the-fine-print-taschenbuch-lauren-asher.jpeg",
+      "author": "Lauren Asher",
+      "description": "Rowan Kane und seine Brüder sollen das milliardenschwere Imperium ihres Großvaters erben: Dreamland. Freizeitparks, Produktionsfirmen, Fünf-Sterne-Hotels, das alles könnte ihnen gehören. Doch wenn sie das Erbe antreten wollen, muss jeder von ihnen eine Aufgabe erfüllen. Rowan, der einstige Träumer, der sich seit Jahren hinter einem Maßanzug und einer eiskalten Fassade verbirgt, soll eine neue Attraktion für Dreamland entwerfen. Widerwillig macht er sich an die Arbeit und trifft auf die schlagfertige Zahra, die ihn mit ihrer quirligen Art fast in den Wahnsinn treibt. Im einen Moment diskutiert er hitzig mit ihr, im anderen kann er nur daran denken, ihr nahe zu sein. Sie weckt Gefühle in ihm, die er lange verdrängt hat. Aber er ist ihr Boss. Und er hat ein Geheimnis, das sie nie erfahren darf.",
+      "publisher": "Heyne",
+      "publicationDate": "2023-06-14",
+      "pages": 480,
+      "language": "Deutsch",
+      "formats": [
+        {
+          "type": "Taschenbuch",
+          "price": 15.00,
+          "dimensions": "20x25 cm",
+          "weight": "600 g",
+          "isbn": "978-3-453-42739-6"
+        },
+        {
+          "type": "E-Book",
+          "price": 9.99,
+          "fileSize": "3 MB",
+          "format": "MOBI",
+          "isbn": "978-3-453-42739-6"
+        }
+      ],
+      "categories": ["Romantik", "Roman"]
+    },
+    {
+      "id": 14,
+      "title": "Beautiful Graves",
+      "picture": "https://images.thalia.media/00/-/0691d258eeff47e480772de04fc89ac3/beautiful-graves-taschenbuch-l-j-shen.jpeg",
+      "author": "L. J. Shen",
+      "description": "Für Everlynne ist es Liebe auf den ersten Blick, als sie den attraktiven Joe im Spanienurlaub kennenlernt. Noch nie hat sie eine so tiefe Verbindung zu jemandem gespürt. Doch ihnen bleibt nur eine Nacht, bis Ever nach San Francisco zurückkehren muss. Die beiden versprechen sich, in Kontakt zu bleiben, aber ein schwerer Schicksalsschlag veranlasst Ever, Joe aus ihrem Leben zu verbannen. In ihrer tiefen Trauer schottet sie sich von allen ab, bis sie Dominic Graves begegnet. Mit seinem Optimismus und seiner Liebe bringt Dominic sie zurück ins Leben, dennoch kann sie Joe einfach nicht vergessen. Und dann steht er plötzlich wieder vor ihr ...",
+      "publisher": "LYX",
+      "publicationDate": "2023-06-30",
+      "pages": 448,
+      "language": "Deutsch",
+      "formats": [
+        {
+          "type": "Taschenbuch",
+          "price": 14.00,
+          "dimensions": "20x25 cm",
+          "weight": "600 g",
+          "isbn": "978-3-7363-1979-0"
+        },
+        {
+          "type": "E-Book",
+          "price": 9.99,
+          "fileSize": "3 MB",
+          "format": "MOBI",
+          "isbn": "978-2-345678-91-8"
+        }
+      ],
+      "categories": ["Science Fiction", "Thriller"]
+    },
+    {
+      "id": 15,
+      "title": "Umweltrecht",
+      "picture": "https://images.thalia.media/00/-/66958694feea44b787b6fd04d5c5689b/umweltrecht-taschenbuch.jpeg",
+      "description": "UmweltverträglichkeitsprüfungsG, EMAS-VO (EU), UmweltauditG, UmweltinformationsG, UmweltschadensG, BundesnaturschutzG, TierschutzG, Bundes-BodenschutzG, WasserhaushaltsG, KreislaufwirtschaftsG, Bundes-ImmissionsschutzG, Bundes-KlimaschutzG, Treibhausgas- und Brennstoff-",
+      "publisher": "dtv",
+      "publicationDate": "2023-02-16",
+      "pages": 1727,
+      "language": "Deutsch",
+      "formats": [
+        {
+          "type": "Taschenbuch",
+          "price": 20.90,
+          "dimensions": "20x25 cm",
+          "weight": "600 g",
+          "isbn": "978-3-423-53182-5"
+        }
+      ],
+      "categories": ["Fachbuch"]
+    },
+    {
+      "id": 16,
+      "title": "Strafgesetzbuch",
+      "picture": "https://images.thalia.media/00/-/c566487f940b4c1bb4d695e0e3ae341d/strafgesetzbuch-taschenbuch.jpeg",
+      "description": "Strafgesetzbuch, Betäubungsmittelgesetz, Betäubungsmittel-VerschreibungsVO, Grundgesetz, Jugendgerichtsgesetz, Ordnungswidrigkeitengesetz, Straßenverkehrsgesetz, Subventionsgesetz, Versammlungsgesetz, Völkerstrafgesetzbuch, Wehrstrafgesetz, Wirtschaftsstrafgesetz.",
+      "publisher": "dtv",
+      "publicationDate": "2023-02-16",
+      "pages": 399,
+      "language": "Deutsch",
+      "formats": [
+        {
+          "type": "Taschenbuch",
+          "price": 11.90,
+          "dimensions": "20x25 cm",
+          "weight": "600 g",
+          "isbn": "978-3-423-53164-1"
+        }
+      ],
+      "categories": ["Fachbuch"]
+    },
+    {
+      "id": 17,
+      "title": "Baugesetzbuch",
+      "picture": "https://images.thalia.media/00/-/e9a72cdac2404e78966946569ec76be2/baugesetzbuch-taschenbuch.jpeg",
+      "description": "Baugesetzbuch (BauGB), Bundesnaturschutzgesetz (Auszug), Planungssicherstellungsgesetz, NEU: Windenergieflächenbedarfsgesetz, Immobilienwertermittlungsverordnung, Baunutzungsverordnung (BauNVO), Baunutzungsverordnung 1962, Synopse der BauNVO von 1968, 1977, 1990 und 2017, Planzeichenverordnung (PlanZVO), Raumordnungsgesetz, Raumordnungsverordnung, Verzeichnis baurechtlicher Vorschriften der Länder.",
+      "publisher": "dtv",
+      "publicationDate": "2023-04-20",
+      "pages": 529,
+      "language": "Deutsch",
+      "formats": [
+        {
+          "type": "Taschenbuch",
+          "price": 12.90,
+          "dimensions": "20x25 cm",
+          "weight": "600 g",
+          "isbn": "978-3-423-53197-9"
+        }
+      ],
+      "categories": ["Fachbuch"]
+    },
+    {
+      "id": 18,
+      "title": "She Gets the Girl",
+      "picture": "",
+      "author": "Autor 3",
+      "description": "Alex ist stur, chaotisch und gilt als Aufreißerin. Sie weiß einfach, wie man Mädels rumkriegt. Sie dann auch zu halten, ist allerdings nicht gerade ihre Stärke … Molly dagegen hat ihr Leben im Griff – bis auf die Tatsache, dass sie im Umgang mit anderen Menschen komplett versagt. Kein Wunder, dass sie gegenüber ihrem Schwarm, der unfassbar coolen Cora, kein Wort herausbringt.",
+      "publisher": "dtv",
+      "publicationDate": "2023-06-15",
+      "pages": 368,
+      "language": "Deutsch",
+      "formats": [
+        {
+          "type": "Taschenbuch",
+          "price": 17.00,
+          "dimensions": "20x25 cm",
+          "weight": "600 g",
+          "isbn": "978-3-423-74000-5"
+        },
+        {
+          "type": "E-Book",
+          "price": 14.99,
+          "fileSize": "3 MB",
+          "format": "MOBI",
+          "isbn": "978-2-345678-91-8"
+        }
+      ],
+      "categories": ["Komödie", "Jugend"]
+    },
+    {
+      "id": 19,
+      "title": "Bleib bei mir, Sam",
+      "picture": "https://images.thalia.media/00/-/9a80cac2631047219fd5c9be6497e6ab/bleib-bei-mir-sam-taschenbuch-dustin-thao.jpeg",
+      "author": "Dustin Thao",
+      "description": "Die siebzehnjährige Julie hat ihre Zukunft perfekt geplant - endlich raus aus dem kleinen Ort, mit ihrem Freund Sam in die Stadt ziehen und studieren, den Sommer in Japan verbringen. Aber dann stirbt Sam. Und alles ist anders. Julie ist am Boden zerstört, geht nicht zur Beerdigung, wirft weg, was sie von Sam besitzt, und versucht ihn zu vergessen. Doch als sie eine Notiz von Sam in ihrem alten Jahrbuch liest, kommt alles wieder hoch. Nur um seine Stimme zu hören, ruft sie Sams Handynummer an. Und Sam hebt ab ...",
+      "publisher": "Cbj",
+      "publicationDate": "2023-09-11",
+      "pages": 226,
+      "language": "Deutsch",
+      "formats": [
+        {
+          "type": "Taschenbuch",
+          "price": 16.00,
+          "dimensions": "20x25 cm",
+          "weight": "600 g",
+          "isbn": "978-3-570-16650-5"
+        },
+        {
+          "type": "E-Book",
+          "price": 9.99,
+          "fileSize": "3 MB",
+          "format": "MOBI",
+          "isbn": "978-2-345678-91-8"
+        }
+      ],
+      "categories": ["Romantik", "Drama", "Jugend"]
+    },
+    {
+      "id": 20,
+      "title": "Am Ende sterben wir sowieso",
+      "picture": "https://images.thalia.media/00/-/41fc187f13b94fb89b8a9214618c668e/am-ende-sterben-wir-sowieso-taschenbuch-adam-silvera.jpeg",
+      "author": "Adam Silvera",
+      "description": "Was wäre, wenn das Schicksal bei dir anklopft, um dich vor deinem bevorstehenden Tod zu warnen? Am 5. September, kurz nach Mitternacht, bekommen Mateo und Rufus einen solchen Anruf. Von den sogenannten Todesboten, die die undankbare Aufgabe haben, ihnen die schlechten Neuigkeiten zu überbringen: Sie werden heute sterben. Noch kennen sich die beiden nicht, doch aus unterschiedlichen Gründen beschließen sie, an ihrem letzten Tag einen neuen Freund zu finden. Die gute Nachricht lautet, dass es dafür eine App gibt: Sie heißt 'Letzte Freunde' und durch sie werden sich Rufus und Mateo begegnen, um ein letztes großes Abenteuer zu erleben – und um gemeinsam ein ganzes Leben an einem einzigen Tag zu verbringen.",
+      "publisher": "Arctis ein Imprint der Atrium Verlag AG",
+      "publicationDate": "2023-02-19",
+      "pages": 336,
+      "language": "Deutsch",
+      "formats": [
+        {
+          "type": "Taschenbuch",
+          "price": 12.00,
+          "dimensions": "20x25 cm",
+          "weight": "600 g",
+          "isbn": "978-3-03880-203-7"
+        },
+        {
+          "type": "E-Book",
+          "price": 12.99,
+          "fileSize": "3 MB",
+          "format": "MOBI",
+          "isbn": "978-2-345678-91-8"
+        }
+      ],
+      "categories": ["Drama", "Roman", "Jugend"]
+    }
+  ]
+}
