@@ -4,8 +4,12 @@
   gap: 100px;
   max-height: 500px;
   min-height: 500px;
-
+  
   transition: opacity 0.1s ease;
+}
+
+.neuheiten-main {
+  display: flex;
 }
 
 .neuheiten-book-container {
@@ -17,7 +21,7 @@
     list-style-type: none;
   }
 
-  .informations {
+  .neuheiten-informations {
     margin-top: 30px;
     line-height: 32px;
   }
@@ -38,6 +42,8 @@
 .neuheiten-button-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: 0px 40px;
 }
 
 .neuheiten-body-container.fade-transition {
@@ -66,4 +72,8 @@
 
 .neuheiten-progress--full {
   width: 100%;
+}
+
+.neuheiten-book-title {
+  overflow-wrap: break-word;
 }

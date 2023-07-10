@@ -50,6 +50,7 @@ const Romane = () => {
         setCanClick(true);
       }, 600);
     }
+    
   };
 
   const handleTransitionEnd = () => {
@@ -62,9 +63,7 @@ const Romane = () => {
       <div className="romane-main">
         <div className="romane-button-container">
           <i
-            className={`bi bi-arrow-left-short slide-left-button ${
-              currentPosition === 0 ? 'disabled' : ''
-            }`}
+            className={'bi bi-arrow-left-short slide-left-button'}
             onClick={handlePreviousSlide}
           />
         </div>
@@ -107,9 +106,7 @@ const Romane = () => {
         </div>
         <div className="romane-button-container">
           <i
-            className={`bi bi-arrow-right-short slide-right-button ${
-              currentPosition === totalPages - 1 ? 'disabled' : ''
-            }`}
+            className={'bi bi-arrow-right-short slide-right-button'}
             onClick={handleNextSlide}
           />
         </div>

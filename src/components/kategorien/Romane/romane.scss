@@ -18,12 +18,16 @@
   flex-direction: column;
   margin: 0px 22px;
   transition: opacity 0.1s ease;
-
+  
+  
   ul {
     padding: 0;
   }
-
+  
   ul li {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
     /* 
     white-space: nowrap;
     overflow: hidden;
@@ -31,7 +35,7 @@
     */
     list-style-type: none;
   }
-
+  
   .romane-informations {
     margin-top: 30px;
     line-height: 32px;
