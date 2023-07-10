@@ -1,0 +1,98 @@
+.romane-main {
+  display: flex;
+}
+
+.romane-body-container {
+  display: flex;
+  justify-content: center;
+  max-height: 500px;
+  min-height: 500px;
+  transition: opacity 0.01s ease;
+  width: 100%;
+  min-width: 1000px;
+}
+
+.romane-book-container {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 22px;
+  transition: opacity 0.01s ease;
+
+  ul {
+    padding: 0;
+  }
+
+  ul li {
+    /* 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    */
+    list-style-type: none;
+  }
+
+  .romane-informations {
+    margin-top: 30px;
+    line-height: 32px;
+
+    .bold {
+      font-weight: bold;
+    }
+  }
+}
+
+.romane-picture-box {
+  img {
+    width: 160px;
+    background-color: rgb(242, 242, 242);
+    padding: 10px;
+  }
+}
+
+.romane-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.romane-body-container.fade-transition {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s ease; /* Hier die Transition-Dauer anpassen */
+
+}
+
+.romane-book-container.fade-transition {
+  opacity: 0;
+}
+
+.slide-left-button,
+.slide-right-button {
+  font-size: 38px;
+  cursor: pointer;
+  height: max-content;
+  color: white;
+  background-color: green;
+  border-radius: 100%;
+  border: 1px solid black;
+  margin: 0 auto;
+  display: flex;
+}
+
+.romane-progress-bar {
+  height: 10px;
+  background-color: #ddd;
+  margin-top: 10px;
+}
+
+.romane-progress {
+  height: 100%;
+  background-color: #337ab7;
+  transition: width 0.3s ease;
+}
+
+.romane-progress--full {
+  background-color: #5cb85c;
+}

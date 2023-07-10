@@ -82,7 +82,7 @@
           "isbn": "978-2-345678-91-8"
         }
       ],
-      "categories": ["Science Fiction", "Thriller"]
+      "categories": ["Science Fiction", "Thriller", "Roman"]
     },
     {
       "id": 4,
@@ -455,8 +455,8 @@
     {
       "id": 18,
       "title": "She Gets the Girl",
-      "picture": "",
-      "author": "Autor 3",
+      "picture": "https://images.thalia.media/00/-/d5f8794ec6cc4ed58e75045b5daff9c2/she-gets-the-girl-taschenbuch-rachael-lippincott-englisch.jpeg",
+      "author": ["Rachael Lippincott", "Alyson Derrick"],
       "description": "Alex ist stur, chaotisch und gilt als Aufreißerin. Sie weiß einfach, wie man Mädels rumkriegt. Sie dann auch zu halten, ist allerdings nicht gerade ihre Stärke … Molly dagegen hat ihr Leben im Griff – bis auf die Tatsache, dass sie im Umgang mit anderen Menschen komplett versagt. Kein Wunder, dass sie gegenüber ihrem Schwarm, der unfassbar coolen Cora, kein Wort herausbringt.",
       "publisher": "dtv",
       "publicationDate": "2023-06-15",

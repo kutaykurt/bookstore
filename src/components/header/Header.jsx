@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './header.scss';
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <div className="Header">
       <div>
@@ -12,9 +18,14 @@ const Header = () => {
       </div>
       <div className="mid-list">
         <ul>
-          <Link className="link">
+          <Link className="link" onClick={toggleMenu}>
             <li>Bücher</li>
           </Link>
+          {menuOpen && (
+            <ul>
+              <li>Hallo</li>
+            </ul>
+          )}
           <Link className="link">
             <li className='sale'>SALE</li>
           </Link>
