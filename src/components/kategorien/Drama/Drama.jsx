@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { fetchBooks } from '../../fetching/fetchBooks';
-import './neuheiten.scss';
+import './drama.scss';
 
-const Neuheiten = () => {
+const Drama = () => {
   const [books, setBooks] = useState([]);
   const [currentPosition, setCurrentPosition] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [canClick, setCanClick] = useState(true);
-  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
     async function fetchBooksData() {
@@ -17,13 +16,9 @@ const Neuheiten = () => {
     fetchBooksData();
   }, []);
 
-  const pageSize = 2;
-  const totalPages = Math.ceil(books.length / pageSize);
-
-  useEffect(() => {
-    const newProgress = (currentPosition / (totalPages - 1)) * 100;
-    setProgress(newProgress);
-  }, [currentPosition, totalPages]);
+  const dramaBooks = books.filter((book) => book.categories.includes('Drama'));
+  const pageSize = 5;
+  const totalPages = Math.ceil(dramaBooks.length / pageSize);
 
   const handlePreviousSlide = () => {
     if (!isTransitioning && canClick) {
@@ -49,63 +44,53 @@ const Neuheiten = () => {
         setCanClick(true);
       }, 600);
     }
+    
   };
 
-  
-  useEffect(() => {
-    const interval = setInterval(() => {
-      handleNextSlide();
-    }, 10000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, [currentPosition, canClick]);
-  
   const handleTransitionEnd = () => {
     setIsTransitioning(false);
   };
-  
+
   return (
-    <div className="Neuheiten">
-      <h2>Neuheiten</h2>
-      <div className="neuheiten-main">
-        <div className="neuheiten-button-container">
+    <div className="Drama">
+      <h2>Drama</h2>
+      <div className="drama-main">
+        <div className="drama-button-container">
           <i
             className={'bi bi-arrow-left-short slide-left-button'}
             onClick={handlePreviousSlide}
           />
         </div>
         <div
-          className={`neuheiten-body-container ${
+          className={`drama-body-container ${
             isTransitioning ? 'fade-transition' : ''
           }`}
           onTransitionEnd={handleTransitionEnd}
         >
-          {books
+          {dramaBooks
             .slice(
               currentPosition * pageSize,
               currentPosition * pageSize + pageSize
             )
             .map((book, index) => (
               <div
-                className={`neuheiten-book-container ${
+                className={`drama-book-container ${
                   isTransitioning ? 'fade-transition' : ''
                 }`}
                 key={book.id}
                 style={{ transitionDelay: `${index * 0.1}s` }}
               >
-                <div className="neuheiten-picture-box">
+                <div className="drama-picture-box">
                   <img src={book.picture} alt={book.title} />
                 </div>
-                <div className="neuheiten-informations">
+                <div className="drama-informations">
                   <ul>
-                    <li className="neuheiten-book-title bold">{book.title}</li>
-                    <li className="neuheiten-book-autor">{book.author}</li>
-                    <li className="neuheiten-book-pages">Seiten: {book.pages}</li>
-                    <li className="neuheiten-book-type">{book.type}</li>
-                    <li className="neuheiten-book-price">{book.price}</li>
-                    <li className="neuheiten-book-categories">
+                    <li className="drama-book-title bold">{book.title}</li>
+                    <li className="drama-book-autor">{book.author}</li>
+                    <li className="drama-book-pages">Seiten: {book.pages}</li>
+                    <li className="drama-book-type">{book.type}</li>
+                    <li className="drama-book-price">{book.price}</li>
+                    <li className="drama-book-categories">
                       {[...book.categories].join(' | ')}
                     </li>
                   </ul>
@@ -113,23 +98,15 @@ const Neuheiten = () => {
               </div>
             ))}
         </div>
-        <div className="neuheiten-button-container">
+        <div className="drama-button-container">
           <i
             className={'bi bi-arrow-right-short slide-right-button'}
             onClick={handleNextSlide}
           />
         </div>
       </div>
-      <div className="neuheiten-progress-bar">
-        <div
-          className={`neuheiten-progress ${
-            progress === 100 ? 'neuheiten-progress--full' : ''
-          }`}
-          style={{ width: `${progress}%` }}
-        />
-      </div>
     </div>
   );
 };
 
-export default Neuheiten;
+export default Drama;

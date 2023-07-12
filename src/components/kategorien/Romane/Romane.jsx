@@ -7,7 +7,7 @@ const Romane = () => {
   const [currentPosition, setCurrentPosition] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [canClick, setCanClick] = useState(true);
-  const [progress, setProgress] = useState(0);
+  // const [progress, setProgress] = useState(0);
 
   useEffect(() => {
     async function fetchBooksData() {
@@ -21,10 +21,10 @@ const Romane = () => {
   const pageSize = 5;
   const totalPages = Math.ceil(romanBooks.length / pageSize);
 
-  useEffect(() => {
+  /* useEffect(() => {
     const newProgress = (currentPosition / (totalPages - 1)) * 100;
     setProgress(newProgress);
-  }, [currentPosition, totalPages]);
+  }, [currentPosition, totalPages]); */
 
   const handlePreviousSlide = () => {
     if (!isTransitioning && canClick) {
@@ -111,14 +111,14 @@ const Romane = () => {
           />
         </div>
       </div>
-      <div className="romane-progress-bar">
+      {/* <div className="romane-progress-bar">
         <div
           className={`romane-progress ${
             progress === 100 ? 'romane-progress--full' : ''
           }`}
           style={{ width: `${progress}%` }}
         ></div>
-      </div>
+      </div> */}
     </div>
   );
 };

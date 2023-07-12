@@ -1,8 +1,8 @@
-.romane-main {
+.drama-main {
   display: flex;
 }
 
-.romane-body-container {
+.drama-body-container {
   display: flex;
   max-height: 500px;
   min-height: 500px;
@@ -11,28 +11,27 @@
   min-width: 1000px;
 }
 
-.romane-book-container {
+.drama-book-container {
   width: 160px;
   display: flex;
   flex-direction: column;
   margin: 0px 22px;
   transition: opacity 0.1s ease;
-  
-  
+
   ul {
     padding: 0;
   }
-  
+
   ul li {
     /* 
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      */
     list-style-type: none;
   }
-  
-  .romane-informations {
+
+  .drama-informations {
     margin-top: 10px;
     line-height: 26px;
 
@@ -42,7 +41,7 @@
   }
 }
 
-.romane-picture-box {
+.drama-picture-box {
   img {
     width: 160px;
     background-color: rgb(242, 242, 242);
@@ -50,21 +49,20 @@
   }
 }
 
-.romane-button-container {
+.drama-button-container {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
 
-.romane-body-container.fade-transition {
+.drama-body-container.fade-transition {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.1s ease; /* Hier die Transition-Dauer anpassen */
-
 }
 
-.romane-book-container.fade-transition {
+.drama-book-container.fade-transition {
   opacity: 0;
 }
 
@@ -81,32 +79,32 @@
   display: flex;
 }
 
-.romane-progress-bar {
+.drama-progress-bar {
   height: 10px;
   background-color: #ddd;
   margin-top: 10px;
 }
 
-.romane-progress {
+.drama-progress {
   height: 100%;
   background-color: #337ab7;
   transition: width 0.3s ease;
 }
 
-.romane-progress--full {
+.drama-progress--full {
   background-color: #5cb85c;
 }
 
-.romane-body-container.fade-transition {
+.drama-body-container.fade-transition {
   opacity: 0;
   pointer-events: none;
 }
 
-.romane-book-container.fade-transition {
+.drama-book-container.fade-transition {
   opacity: 0;
 }
 
-.romane-informations .romane-book-title {
+.drama-informations .drama-book-title {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
