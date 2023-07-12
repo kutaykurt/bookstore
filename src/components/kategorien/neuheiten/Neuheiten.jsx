@@ -61,7 +61,7 @@ const Neuheiten = () => {
       clearInterval(interval);
     };
   }, [currentPosition, canClick]);
-  
+   
   const handleTransitionEnd = () => {
     setIsTransitioning(false);
   };

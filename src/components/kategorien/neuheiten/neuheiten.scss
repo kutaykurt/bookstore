@@ -74,6 +74,10 @@
   width: 100%;
 }
 
-.neuheiten-book-title {
-  overflow-wrap: break-word;
+.neuheiten-book-container .neuheiten-book-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
