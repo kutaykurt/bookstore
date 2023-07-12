@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { fetchBooks } from '../../fetching/fetchBooks';
-import './fantasy.scss';
+import '../kategorien.scss';
 
 const Fantasy = () => {
   const [books, setBooks] = useState([]);
@@ -54,15 +54,15 @@ const Fantasy = () => {
   return (
     <div className="fantasy">
       <h2>fantasy</h2>
-      <div className="fantasy-main">
-        <div className="fantasy-button-container">
+      <div className="main">
+        <div className="button-container">
           <i
             className={'bi bi-arrow-left-short slide-left-button'}
             onClick={handlePreviousSlide}
           />
         </div>
         <div
-          className={`fantasy-body-container ${
+          className={`body-container ${
             isTransitioning ? 'fade-transition' : ''
           }`}
           onTransitionEnd={handleTransitionEnd}
@@ -74,23 +74,23 @@ const Fantasy = () => {
             )
             .map((book, index) => (
               <div
-                className={`fantasy-book-container ${
+                className={`book-container ${
                   isTransitioning ? 'fade-transition' : ''
                 }`}
                 key={book.id}
                 style={{ transitionDelay: `${index * 0.1}s` }}
               >
-                <div className="fantasy-picture-box">
+                <div className="picture-box">
                   <img src={book.picture} alt={book.title} />
                 </div>
-                <div className="fantasy-informations">
+                <div className="informations">
                   <ul>
-                    <li className="fantasy-book-title bold">{book.title}</li>
-                    <li className="fantasy-book-autor">{book.author}</li>
-                    <li className="fantasy-book-pages">Seiten: {book.pages}</li>
-                    <li className="fantasy-book-type">{book.type}</li>
-                    <li className="fantasy-book-price">{book.price}</li>
-                    <li className="fantasy-book-categories">
+                    <li className="book-title bold">{book.title}</li>
+                    <li className="book-autor">{book.author}</li>
+                    <li className="book-pages">Seiten: {book.pages}</li>
+                    <li className="book-type">{book.type}</li>
+                    <li className="book-price">{book.price}</li>
+                    <li className="book-categories">
                       {[...book.categories].join(' | ')}
                     </li>
                   </ul>
@@ -98,7 +98,7 @@ const Fantasy = () => {
               </div>
             ))}
         </div>
-        <div className="fantasy-button-container">
+        <div className="button-container">
           <i
             className={'bi bi-arrow-right-short slide-right-button'}
             onClick={handleNextSlide}

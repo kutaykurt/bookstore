@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { fetchBooks } from '../../fetching/fetchBooks';
-import './drama.scss';
+import '../kategorien.scss';
 
 const Drama = () => {
   const [books, setBooks] = useState([]);
@@ -54,15 +54,15 @@ const Drama = () => {
   return (
     <div className="Drama">
       <h2>Drama</h2>
-      <div className="drama-main">
-        <div className="drama-button-container">
+      <div className="main">
+        <div className="button-container">
           <i
             className={'bi bi-arrow-left-short slide-left-button'}
             onClick={handlePreviousSlide}
           />
         </div>
         <div
-          className={`drama-body-container ${
+          className={`body-container ${
             isTransitioning ? 'fade-transition' : ''
           }`}
           onTransitionEnd={handleTransitionEnd}
@@ -74,23 +74,23 @@ const Drama = () => {
             )
             .map((book, index) => (
               <div
-                className={`drama-book-container ${
+                className={`book-container ${
                   isTransitioning ? 'fade-transition' : ''
                 }`}
                 key={book.id}
                 style={{ transitionDelay: `${index * 0.1}s` }}
               >
-                <div className="drama-picture-box">
+                <div className="picture-box">
                   <img src={book.picture} alt={book.title} />
                 </div>
-                <div className="drama-informations">
+                <div className="informations">
                   <ul>
-                    <li className="drama-book-title bold">{book.title}</li>
-                    <li className="drama-book-autor">{book.author}</li>
-                    <li className="drama-book-pages">Seiten: {book.pages}</li>
-                    <li className="drama-book-type">{book.type}</li>
-                    <li className="drama-book-price">{book.price}</li>
-                    <li className="drama-book-categories">
+                    <li className="book-title bold">{book.title}</li>
+                    <li className="book-autor">{book.author}</li>
+                    <li className="book-pages">Seiten: {book.pages}</li>
+                    <li className="book-type">{book.type}</li>
+                    <li className="book-price">{book.price}</li>
+                    <li className="book-categories">
                       {[...book.categories].join(' | ')}
                     </li>
                   </ul>
@@ -98,7 +98,7 @@ const Drama = () => {
               </div>
             ))}
         </div>
-        <div className="drama-button-container">
+        <div className="button-container">
           <i
             className={'bi bi-arrow-right-short slide-right-button'}
             onClick={handleNextSlide}

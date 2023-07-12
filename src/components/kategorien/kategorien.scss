@@ -1,8 +1,8 @@
-.romantik-main {
+.main {
     display: flex;
   }
   
-  .romantik-body-container {
+  .body-container {
     display: flex;
     max-height: 500px;
     min-height: 500px;
@@ -11,7 +11,7 @@
     min-width: 1000px;
   }
   
-  .romantik-book-container {
+  .book-container {
     width: 160px;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@
       list-style-type: none;
     }
   
-    .romantik-informations {
+    .informations {
       margin-top: 10px;
       line-height: 26px;
   
@@ -41,7 +41,7 @@
     }
   }
   
-  .romantik-picture-box {
+  .picture-box {
     img {
       width: 160px;
       background-color: rgb(242, 242, 242);
@@ -49,20 +49,20 @@
     }
   }
   
-  .romantik-button-container {
+  .button-container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
   }
   
-  .romantik-body-container.fade-transition {
+  .body-container.fade-transition {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.1s ease; /* Hier die Transition-Dauer anpassen */
   }
   
-  .romantik-book-container.fade-transition {
+  .book-container.fade-transition {
     opacity: 0;
   }
   
@@ -79,32 +79,32 @@
     display: flex;
   }
   
-  .romantik-progress-bar {
+  .progress-bar {
     height: 10px;
     background-color: #ddd;
     margin-top: 10px;
   }
   
-  .romantik-progress {
+  .progress {
     height: 100%;
     background-color: #337ab7;
     transition: width 0.3s ease;
   }
   
-  .romantik-progress--full {
+  .progress--full {
     background-color: #5cb85c;
   }
   
-  .romantik-body-container.fade-transition {
+  .body-container.fade-transition {
     opacity: 0;
     pointer-events: none;
   }
   
-  .romantik-book-container.fade-transition {
+  .book-container.fade-transition {
     opacity: 0;
   }
   
-  .romantik-informations .romantik-book-title {
+  .informations .book-title {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;

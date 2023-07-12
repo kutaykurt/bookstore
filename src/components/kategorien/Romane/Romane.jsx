@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { fetchBooks } from '../../fetching/fetchBooks';
-import './romane.scss';
+import '../kategorien.scss';
 
 const Romane = () => {
   const [books, setBooks] = useState([]);
@@ -60,15 +60,15 @@ const Romane = () => {
   return (
     <div className="Romane">
       <h2>Romane</h2>
-      <div className="romane-main">
-        <div className="romane-button-container">
+      <div className="main">
+        <div className="button-container">
           <i
             className={'bi bi-arrow-left-short slide-left-button'}
             onClick={handlePreviousSlide}
           />
         </div>
         <div
-          className={`romane-body-container ${
+          className={`body-container ${
             isTransitioning ? 'fade-transition' : ''
           }`}
           onTransitionEnd={handleTransitionEnd}
@@ -80,23 +80,23 @@ const Romane = () => {
             )
             .map((book, index) => (
               <div
-                className={`romane-book-container ${
+                className={`book-container ${
                   isTransitioning ? 'fade-transition' : ''
                 }`}
                 key={book.id}
                 style={{ transitionDelay: `${index * 0.1}s` }}
               >
-                <div className="romane-picture-box">
+                <div className="picture-box">
                   <img src={book.picture} alt={book.title} />
                 </div>
-                <div className="romane-informations">
+                <div className="informations">
                   <ul>
-                    <li className="romane-book-title bold">{book.title}</li>
-                    <li className="romane-book-autor">{book.author}</li>
-                    <li className="romane-book-pages">Seiten: {book.pages}</li>
-                    <li className="romane-book-type">{book.type}</li>
-                    <li className="romane-book-price">{book.price}</li>
-                    <li className="romane-book-categories">
+                    <li className="book-title bold">{book.title}</li>
+                    <li className="book-autor">{book.author}</li>
+                    <li className="book-pages">Seiten: {book.pages}</li>
+                    <li className="book-type">{book.type}</li>
+                    <li className="book-price">{book.price}</li>
+                    <li className="book-categories">
                       {[...book.categories].join(' | ')}
                     </li>
                   </ul>
@@ -104,17 +104,17 @@ const Romane = () => {
               </div>
             ))}
         </div>
-        <div className="romane-button-container">
+        <div className="button-container">
           <i
             className={'bi bi-arrow-right-short slide-right-button'}
             onClick={handleNextSlide}
           />
         </div>
       </div>
-      {/* <div className="romane-progress-bar">
+      {/* <div className="progress-bar">
         <div
-          className={`romane-progress ${
-            progress === 100 ? 'romane-progress--full' : ''
+          className={`progress ${
+            progress === 100 ? 'progress--full' : ''
           }`}
           style={{ width: `${progress}%` }}
         ></div>

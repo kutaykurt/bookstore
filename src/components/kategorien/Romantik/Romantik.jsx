@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { fetchBooks } from '../../fetching/fetchBooks';
-import './romantik.scss';
+import '../kategorien.scss';
 
 const Romantik = () => {
   const [books, setBooks] = useState([]);
@@ -54,16 +54,16 @@ const Romantik = () => {
 
   return (
     <div className="romantik">
-      <h2>romantik</h2>
-      <div className="romantik-main">
-        <div className="romantik-button-container">
+      <h2>Romantik</h2>
+      <div className="main">
+        <div className="button-container">
           <i
             className={'bi bi-arrow-left-short slide-left-button'}
             onClick={handlePreviousSlide}
           />
         </div>
         <div
-          className={`romantik-body-container ${
+          className={`body-container ${
             isTransitioning ? 'fade-transition' : ''
           }`}
           onTransitionEnd={handleTransitionEnd}
@@ -75,23 +75,23 @@ const Romantik = () => {
             )
             .map((book, index) => (
               <div
-                className={`romantik-book-container ${
+                className={`book-container ${
                   isTransitioning ? 'fade-transition' : ''
                 }`}
                 key={book.id}
                 style={{ transitionDelay: `${index * 0.1}s` }}
               >
-                <div className="romantik-picture-box">
+                <div className="picture-box">
                   <img src={book.picture} alt={book.title} />
                 </div>
-                <div className="romantik-informations">
+                <div className="informations">
                   <ul>
-                    <li className="romantik-book-title bold">{book.title}</li>
-                    <li className="romantik-book-autor">{book.author}</li>
-                    <li className="romantik-book-pages">Seiten: {book.pages}</li>
-                    <li className="romantik-book-type">{book.type}</li>
-                    <li className="romantik-book-price">{book.price}</li>
-                    <li className="romantik-book-categories">
+                    <li className="book-title bold">{book.title}</li>
+                    <li className="book-autor">{book.author}</li>
+                    <li className="book-pages">Seiten: {book.pages}</li>
+                    <li className="book-type">{book.type}</li>
+                    <li className="book-price">{book.price}</li>
+                    <li className="book-categories">
                       {[...book.categories].join(' | ')}
                     </li>
                   </ul>
@@ -99,7 +99,7 @@ const Romantik = () => {
               </div>
             ))}
         </div>
-        <div className="romantik-button-container">
+        <div className="button-container">
           <i
             className={'bi bi-arrow-right-short slide-right-button'}
             onClick={handleNextSlide}
