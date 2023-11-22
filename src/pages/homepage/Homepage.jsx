@@ -11,7 +11,7 @@ import Kategorien from '../../components/kategorien/Kategorien';
 const Homepage = ({ books }) => {
   return (
     <div className="Homepage">
-      <Neuheiten books={books} />
+      {/* <Neuheiten books={books} />
       <div className="linethrough" />
       <Romane books={books} />
       <Drama books={books} />
@@ -19,7 +19,12 @@ const Homepage = ({ books }) => {
         <AddsFirst />
       </div>
       <Fantasy books={books} />
-      <Romantik books={books} />
+      <Romantik books={books} /> */}
+      <Neuheiten />
+      <Kategorien category="Roman" books={books} />
+      <Kategorien category="Drama" books={books} />
+      <Kategorien category="Fantasy" books={books} />
+      <Kategorien category="Romantik" books={books} />
     </div>
   );
 };

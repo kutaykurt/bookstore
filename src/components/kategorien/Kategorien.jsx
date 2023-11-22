@@ -1,13 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './kategorien.scss';
+import { fetchBooks } from '../fetching/fetchBooks';
 
-const Kategorien = ({ category, books }) => {
+const Kategorien = ({ category }) => {
   const [currentPosition, setCurrentPosition] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [canClick, setCanClick] = useState(true);
+  const [books, setBooks] = useState([]);
 
-  console.log(books);
+  useEffect(() => {
+    async function fetchBooksData() {
+      try {
+        const data = await fetchBooks();
+        setBooks(data);
+      } catch (error) {
+        console.error('Error fetching books:', error);
+      }
+    }
+    fetchBooksData();
+  }, []);
 
   const categoryBooks = books.filter((book) => book.categories.includes(category));
   const pageSize = 5;
@@ -58,23 +70,15 @@ const Kategorien = ({ category, books }) => {
           />
         </div>
         <div
-          className={`body-container ${
-            isTransitioning ? 'fade-transition' : ''
-          }`}
+          className={`body-container ${isTransitioning ? 'fade-transition' : ''}`}
           onTransitionEnd={handleTransitionEnd}
         >
           {categoryBooks
-            .slice(
-              currentPosition * pageSize,
-              currentPosition * pageSize + pageSize
-            )
+            .slice(currentPosition * pageSize, currentPosition * pageSize + pageSize)
             .map((book, index) => (
               <Link className="link" to={`/selectedbook/${book.id}`} key={book.id}>
                 <div
-                  className={`book-container ${
-                    isTransitioning ? 'fade-transition' : ''
-                  }`}
-                  key={book.id}
+                  className={`book-container ${isTransitioning ? 'fade-transition' : ''}`}
                   style={{ transitionDelay: `${index * 0.1}s` }}
                 >
                   <div className="picture-box">
@@ -87,9 +91,7 @@ const Kategorien = ({ category, books }) => {
                       <li className="book-pages">Seiten: {book.pages}</li>
                       <li className="book-type">{book.type}</li>
                       <li className="book-price">{book.price}</li>
-                      <li className="book-categories">
-                        {[...book.categories].join(' | ')}
-                      </li>
+                      <li className="book-categories">{[...book.categories].join(' | ')}</li>
                     </ul>
                   </div>
                 </div>
