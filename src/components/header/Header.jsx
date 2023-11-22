@@ -23,7 +23,7 @@ const Header = () => {
           </Link>
           {menuOpen && (
             <ul>
-              <li>Hallo</li>
+              <li></li>
             </ul>
           )}
           <Link className="link">

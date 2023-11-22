@@ -6,19 +6,20 @@ import Drama from '../../components/kategorien/Drama/Drama';
 import Fantasy from '../../components/kategorien/Fantasy/Fantasy';
 import Romantik from '../../components/kategorien/Romantik/Romantik';
 import AddsFirst from '../../components/addsLine/AddsFirst';
+import Kategorien from '../../components/kategorien/Kategorien';
 
-const Homepage = () => {
+const Homepage = ({ books }) => {
   return (
     <div className="Homepage">
-      <Neuheiten />
+      <Neuheiten books={books} />
       <div className="linethrough" />
-      <Romane />
-      <Drama />
+      <Romane books={books} />
+      <Drama books={books} />
       <div>
         <AddsFirst />
       </div>
-      <Fantasy />
-      <Romantik />
+      <Fantasy books={books} />
+      <Romantik books={books} />
     </div>
   );
 };

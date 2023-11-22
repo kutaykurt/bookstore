@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { fetchBooks } from '../../fetching/fetchBooks';
 import './neuheiten.scss';
+import { Link } from 'react-router-dom';
 
 const Neuheiten = () => {
   const [books, setBooks] = useState([]);
@@ -88,6 +89,7 @@ const Neuheiten = () => {
               currentPosition * pageSize + pageSize
             )
             .map((book, index) => (
+              <Link className="link" to={`/selectedbook/${book.id}`} key={book.id}>
               <div
                 className={`neuheiten-book-container ${
                   isTransitioning ? 'fade-transition' : ''
@@ -111,6 +113,7 @@ const Neuheiten = () => {
                   </ul>
                 </div>
               </div>
+            </Link>
             ))}
         </div>
         <div className="neuheiten-button-container">

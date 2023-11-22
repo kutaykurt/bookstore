@@ -4,8 +4,7 @@
   gap: 100px;
   max-height: 500px;
   min-height: 500px;
-  
-  transition: opacity 0.1s ease;
+  transition: opacity 0.2s ease;
 }
 
 .neuheiten-main {
@@ -14,7 +13,7 @@
 
 .neuheiten-book-container {
   display: flex;
-  transition: opacity 0.1s ease;
+  transition: opacity 1s ease;
   width: 500px;
 
   ul li {
@@ -67,7 +66,7 @@
   height: 100%;
   background-color: green;
   border-radius: 4px;
-  transition: width 0.3s ease;
+  transition: width 0.7s ease;
 }
 
 .neuheiten-progress--full {

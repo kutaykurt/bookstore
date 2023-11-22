@@ -1,114 +1,122 @@
 .main {
-    display: flex;
+  display: flex;
+}
+
+.body-container {
+  display: flex;
+  max-height: 500px;
+  min-height: 500px;
+  transition: opacity 0.1s ease;
+  width: 100%;
+  min-width: 1000px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    color: rgb(71, 71, 71);
   }
-  
-  .body-container {
-    display: flex;
-    max-height: 500px;
-    min-height: 500px;
-    transition: opacity 0.1s ease;
-    width: 100%;
-    min-width: 1000px;
+}
+
+.book-container {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 22px;
+  transition: opacity 0.1s ease;
+
+  ul {
+    padding: 0;
   }
-  
-  .book-container {
-    width: 160px;
-    display: flex;
-    flex-direction: column;
-    margin: 0px 22px;
-    transition: opacity 0.1s ease;
-  
-    ul {
-      padding: 0;
-    }
-  
-    ul li {
-      /* 
+
+  ul li {
+    /* 
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         */
-      list-style-type: none;
-    }
-  
-    .informations {
-      margin-top: 10px;
-      line-height: 26px;
-  
-      .bold {
-        font-weight: bold;
-      }
-    }
+    list-style-type: none;
   }
-  
-  .picture-box {
-    img {
-      width: 160px;
-      background-color: rgb(242, 242, 242);
-      padding: 10px;
-    }
-  }
-  
-  .button-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .body-container.fade-transition {
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.1s ease; /* Hier die Transition-Dauer anpassen */
-  }
-  
-  .book-container.fade-transition {
-    opacity: 0;
-  }
-  
-  .slide-left-button,
-  .slide-right-button {
-    font-size: 38px;
-    cursor: pointer;
-    height: max-content;
-    color: white;
-    background-color: green;
-    border-radius: 100%;
-    border: 1px solid black;
-    margin: 0 auto;
-    display: flex;
-  }
-  
-  .progress-bar {
-    height: 10px;
-    background-color: #ddd;
+
+  .informations {
     margin-top: 10px;
+    line-height: 26px;
+
+    .bold {
+      font-weight: bold;
+    }
   }
-  
-  .progress {
-    height: 100%;
-    background-color: #337ab7;
-    transition: width 0.3s ease;
+}
+
+.picture-box {
+  img {
+    width: 160px;
+    background-color: rgb(242, 242, 242);
+    padding: 10px;
   }
-  
-  .progress--full {
-    background-color: #5cb85c;
-  }
-  
-  .body-container.fade-transition {
-    opacity: 0;
-    pointer-events: none;
-  }
-  
-  .book-container.fade-transition {
-    opacity: 0;
-  }
-  
-  .informations .book-title {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.body-container.fade-transition {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s ease; /* Hier die Transition-Dauer anpassen */
+}
+
+.book-container.fade-transition {
+  opacity: 0;
+}
+
+.slide-left-button,
+.slide-right-button {
+  font-size: 38px;
+  cursor: pointer;
+  height: max-content;
+  color: white;
+  background-color: green;
+  border-radius: 100%;
+  border: 1px solid black;
+  margin: 0px auto 100px auto;
+  display: flex;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #ddd;
+  margin-top: 10px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #337ab7;
+  transition: width 0.3s ease;
+}
+
+.progress--full {
+  background-color: #5cb85c;
+}
+
+.body-container.fade-transition {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.book-container.fade-transition {
+  opacity: 0;
+}
+
+.informations .book-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

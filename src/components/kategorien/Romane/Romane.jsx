@@ -50,7 +50,6 @@ const Romane = () => {
         setCanClick(true);
       }, 600);
     }
-    
   };
 
   const handleTransitionEnd = () => {

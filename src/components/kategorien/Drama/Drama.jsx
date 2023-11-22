@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { fetchBooks } from '../../fetching/fetchBooks';
 import '../kategorien.scss';
+import { Link } from 'react-router-dom';
 
 const Drama = () => {
   const [books, setBooks] = useState([]);
@@ -44,7 +45,6 @@ const Drama = () => {
         setCanClick(true);
       }, 600);
     }
-    
   };
 
   const handleTransitionEnd = () => {
@@ -73,29 +73,31 @@ const Drama = () => {
               currentPosition * pageSize + pageSize
             )
             .map((book, index) => (
-              <div
-                className={`book-container ${
-                  isTransitioning ? 'fade-transition' : ''
-                }`}
-                key={book.id}
-                style={{ transitionDelay: `${index * 0.1}s` }}
-              >
-                <div className="picture-box">
-                  <img src={book.picture} alt={book.title} />
+              <Link className="link" to={`/selectedbook/${book.id}`} key={book.id}>
+                <div
+                  className={`book-container ${
+                    isTransitioning ? 'fade-transition' : ''
+                  }`}
+                  key={book.id}
+                  style={{ transitionDelay: `${index * 0.1}s` }}
+                >
+                  <div className="picture-box">
+                    <img src={book.picture} alt={book.title} />
+                  </div>
+                  <div className="informations">
+                    <ul>
+                      <li className="book-title bold">{book.title}</li>
+                      <li className="book-autor">{book.author}</li>
+                      <li className="book-pages">Seiten: {book.pages}</li>
+                      <li className="book-type">{book.type}</li>
+                      <li className="book-price">{book.price}</li>
+                      <li className="book-categories">
+                        {[...book.categories].join(' | ')}
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div className="informations">
-                  <ul>
-                    <li className="book-title bold">{book.title}</li>
-                    <li className="book-autor">{book.author}</li>
-                    <li className="book-pages">Seiten: {book.pages}</li>
-                    <li className="book-type">{book.type}</li>
-                    <li className="book-price">{book.price}</li>
-                    <li className="book-categories">
-                      {[...book.categories].join(' | ')}
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              </Link>
             ))}
         </div>
         <div className="button-container">

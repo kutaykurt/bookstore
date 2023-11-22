@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.App {
+    
+}
+
 .header-upper-background {
     background-color: green;
     height: 6px;
