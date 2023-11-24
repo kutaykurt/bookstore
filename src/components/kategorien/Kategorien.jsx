@@ -21,8 +21,10 @@ const Kategorien = ({ category }) => {
     fetchBooksData();
   }, []);
 
-  const categoryBooks = books.filter((book) => book.categories.includes(category));
-  const pageSize = 5;
+  const categoryBooks = books.filter((book) =>
+    book.categories.includes(category)
+  );
+  const pageSize = 6;
   const totalPages = Math.ceil(categoryBooks.length / pageSize);
 
   useEffect(() => {
@@ -70,15 +72,26 @@ const Kategorien = ({ category }) => {
           />
         </div>
         <div
-          className={`body-container ${isTransitioning ? 'fade-transition' : ''}`}
+          className={`body-container ${
+            isTransitioning ? 'fade-transition' : ''
+          }`}
           onTransitionEnd={handleTransitionEnd}
         >
           {categoryBooks
-            .slice(currentPosition * pageSize, currentPosition * pageSize + pageSize)
+            .slice(
+              currentPosition * pageSize,
+              currentPosition * pageSize + pageSize
+            )
             .map((book, index) => (
-              <Link className="link" to={`/selectedbook/${book.id}`} key={book.id}>
+              <Link
+                className="link"
+                to={`/selectedbook/${book.id}`}
+                key={book.id}
+              >
                 <div
-                  className={`book-container ${isTransitioning ? 'fade-transition' : ''}`}
+                  className={`book-container ${
+                    isTransitioning ? 'fade-transition' : ''
+                  }`}
                   style={{ transitionDelay: `${index * 0.1}s` }}
                 >
                   <div className="picture-box">
@@ -91,7 +104,9 @@ const Kategorien = ({ category }) => {
                       <li className="book-pages">Seiten: {book.pages}</li>
                       <li className="book-type">{book.type}</li>
                       <li className="book-price">{book.price}</li>
-                      <li className="book-categories">{[...book.categories].join(' | ')}</li>
+                      <li className="book-categories">
+                        {[...book.categories].join(' | ')}
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -104,6 +119,11 @@ const Kategorien = ({ category }) => {
             onClick={handleNextSlide}
           />
         </div>
+      </div>
+      <div className="slider-pages-container">
+        <span className="slider-page">
+          {currentPosition + 1} / {totalPages}
+        </span>
       </div>
     </div>
   );

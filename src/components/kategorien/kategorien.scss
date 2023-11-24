@@ -1,14 +1,18 @@
+.Kategorien {
+  margin: 60px 0px;
+  display: flex;
+  justify-content: center;
+}
+
 .main {
   display: flex;
 }
 
 .body-container {
   display: flex;
-  max-height: 500px;
-  min-height: 500px;
-  transition: opacity 0.1s ease;
+  max-width: 1600px;
   width: 100%;
-  min-width: 1000px;
+  transition: opacity 0.1s ease;
 }
 
 .link {
@@ -62,7 +66,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
 }
 
 .body-container.fade-transition {
@@ -119,4 +122,15 @@
   -webkit-line-clamp: 2;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.slider-pages-container {
+  text-align: right;
+
+  .slider-page {
+    background-color: #5cb85c;
+    color: white;
+    padding: 3px 12px;
+    border-radius: 20px;
+  }
 }
