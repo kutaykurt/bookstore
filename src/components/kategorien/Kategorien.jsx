@@ -63,64 +63,65 @@ const Kategorien = ({ category }) => {
 
   return (
     <div className="Kategorien">
-      <h2>{category}</h2>
-      <div className="main">
-        <div className="button-container">
-          <i
-            className={'bi bi-arrow-left-short slide-left-button'}
-            onClick={handlePreviousSlide}
-          />
-        </div>
-        <div
-          className={`body-container ${
-            isTransitioning ? 'fade-transition' : ''
-          }`}
-          onTransitionEnd={handleTransitionEnd}
-        >
-          {categoryBooks
-            .slice(
-              currentPosition * pageSize,
-              currentPosition * pageSize + pageSize
-            )
-            .map((book, index) => (
-              <Link
-                className="link"
-                to={`/selectedbook/${book.id}`}
-                key={book.id}
-              >
-                <div
-                  className={`book-container ${
-                    isTransitioning ? 'fade-transition' : ''
-                  }`}
-                  style={{ transitionDelay: `${index * 0.1}s` }}
+      <div className="content-wrapper">
+        <h2 className="category-title">{category}</h2>
+        <div className="main">
+          <div className="button-container">
+            <i
+              className={'bi bi-arrow-left-short slide-left-button'}
+              onClick={handlePreviousSlide}
+            />
+          </div>
+          <div
+            className={`body-container ${
+              isTransitioning ? 'fade-transition' : ''
+            }`}
+            onTransitionEnd={handleTransitionEnd}
+          >
+            {categoryBooks
+              .slice(
+                currentPosition * pageSize,
+                currentPosition * pageSize + pageSize
+              )
+              .map((book, index) => (
+                <Link
+                  className="link"
+                  to={`/selectedbook/${book.id}`}
+                  key={book.id}
                 >
-                  <div className="picture-box">
-                    <img src={book.picture} alt={book.title} />
+                  <div
+                    className={`book-container ${
+                      isTransitioning ? 'fade-transition' : ''
+                    }`}
+                    style={{ transitionDelay: `${index * 0.1}s` }}
+                  >
+                    <div className="picture-box">
+                      <img src={book.picture} alt={book.title} />
+                    </div>
+                    <div className="informations">
+                      <ul>
+                        <li className="book-title bold">{book.title}</li>
+                        <li className="book-autor">{book.author}</li>
+                        <li className="book-pages">Seiten: {book.pages}</li>
+                        <li className="book-type">{book.type}</li>
+                        <li className="book-price">{book.price}</li>
+                        <li className="book-categories">
+                          {[...book.categories].join(' | ')}
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div className="informations">
-                    <ul>
-                      <li className="book-title bold">{book.title}</li>
-                      <li className="book-autor">{book.author}</li>
-                      <li className="book-pages">Seiten: {book.pages}</li>
-                      <li className="book-type">{book.type}</li>
-                      <li className="book-price">{book.price}</li>
-                      <li className="book-categories">
-                        {[...book.categories].join(' | ')}
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              ))}
+          </div>
+          <div className="button-container">
+            <i
+              className={'bi bi-arrow-right-short slide-right-button'}
+              onClick={handleNextSlide}
+            />
+          </div>
         </div>
-        <div className="button-container">
-          <i
-            className={'bi bi-arrow-right-short slide-right-button'}
-            onClick={handleNextSlide}
-          />
-        </div>
-      </div>
-      <div className="slider-pages-container">
+        <div className="slider-pages-container"></div>
         <span className="slider-page">
           {currentPosition + 1} / {totalPages}
         </span>

@@ -52,7 +52,6 @@ const Neuheiten = () => {
     }
   };
 
-  
   useEffect(() => {
     const interval = setInterval(() => {
       handleNextSlide();
@@ -62,74 +61,84 @@ const Neuheiten = () => {
       clearInterval(interval);
     };
   }, [currentPosition, canClick]);
-  
+
   const handleTransitionEnd = () => {
     setIsTransitioning(false);
   };
-  
+
   return (
     <div className="Neuheiten">
-      <h2>Neuheiten</h2>
-      <div className="neuheiten-main">
-        <div className="neuheiten-button-container">
-          <i
-            className={'bi bi-arrow-left-short slide-left-button'}
-            onClick={handlePreviousSlide}
+      <div className="content-wrapper">
+        <h2>Neuheiten</h2>
+        <div className="neuheiten-main">
+          <div className="neuheiten-button-container">
+            <i
+              className={'bi bi-arrow-left-short slide-left-button'}
+              onClick={handlePreviousSlide}
+            />
+          </div>
+          <div
+            className={`neuheiten-body-container ${
+              isTransitioning ? 'fade-transition' : ''
+            }`}
+            onTransitionEnd={handleTransitionEnd}
+          >
+            {books
+              .slice(
+                currentPosition * pageSize,
+                currentPosition * pageSize + pageSize
+              )
+              .map((book, index) => (
+                <Link
+                  className="link"
+                  to={`/selectedbook/${book.id}`}
+                  key={book.id}
+                >
+                  <div
+                    className={`neuheiten-book-container ${
+                      isTransitioning ? 'fade-transition' : ''
+                    }`}
+                    key={book.id}
+                    style={{ transitionDelay: `${index * 0.1}s` }}
+                  >
+                    <div className="neuheiten-picture-box">
+                      <img src={book.picture} alt={book.title} />
+                    </div>
+                    <div className="neuheiten-informations">
+                      <ul>
+                        <li className="neuheiten-book-title bold">
+                          {book.title}
+                        </li>
+                        <li className="neuheiten-book-autor">{book.author}</li>
+                        <li className="neuheiten-book-pages">
+                          Seiten: {book.pages}
+                        </li>
+                        <li className="neuheiten-book-type">{book.type}</li>
+                        <li className="neuheiten-book-price">{book.price}</li>
+                        <li className="neuheiten-book-categories">
+                          {[...book.categories].join(' | ')}
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+          </div>
+          <div className="neuheiten-button-container">
+            <i
+              className={'bi bi-arrow-right-short slide-right-button'}
+              onClick={handleNextSlide}
+            />
+          </div>
+        </div>
+        <div className="neuheiten-progress-bar">
+          <div
+            className={`neuheiten-progress ${
+              progress === 100 ? 'neuheiten-progress--full' : ''
+            }`}
+            style={{ width: `${progress}%` }}
           />
         </div>
-        <div
-          className={`neuheiten-body-container ${
-            isTransitioning ? 'fade-transition' : ''
-          }`}
-          onTransitionEnd={handleTransitionEnd}
-        >
-          {books
-            .slice(
-              currentPosition * pageSize,
-              currentPosition * pageSize + pageSize
-            )
-            .map((book, index) => (
-              <Link className="link" to={`/selectedbook/${book.id}`} key={book.id}>
-              <div
-                className={`neuheiten-book-container ${
-                  isTransitioning ? 'fade-transition' : ''
-                }`}
-                key={book.id}
-                style={{ transitionDelay: `${index * 0.1}s` }}
-              >
-                <div className="neuheiten-picture-box">
-                  <img src={book.picture} alt={book.title} />
-                </div>
-                <div className="neuheiten-informations">
-                  <ul>
-                    <li className="neuheiten-book-title bold">{book.title}</li>
-                    <li className="neuheiten-book-autor">{book.author}</li>
-                    <li className="neuheiten-book-pages">Seiten: {book.pages}</li>
-                    <li className="neuheiten-book-type">{book.type}</li>
-                    <li className="neuheiten-book-price">{book.price}</li>
-                    <li className="neuheiten-book-categories">
-                      {[...book.categories].join(' | ')}
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </Link>
-            ))}
-        </div>
-        <div className="neuheiten-button-container">
-          <i
-            className={'bi bi-arrow-right-short slide-right-button'}
-            onClick={handleNextSlide}
-          />
-        </div>
-      </div>
-      <div className="neuheiten-progress-bar">
-        <div
-          className={`neuheiten-progress ${
-            progress === 100 ? 'neuheiten-progress--full' : ''
-          }`}
-          style={{ width: `${progress}%` }}
-        />
       </div>
     </div>
   );

@@ -4,13 +4,24 @@
   justify-content: center;
 }
 
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+}
+
+.category-title {
+  text-align: left;
+  margin-left: 20px;
+}
+
 .main {
   display: flex;
 }
 
 .body-container {
   display: flex;
-  max-width: 1600px;
+  min-width: 1200px;
   width: 100%;
   transition: opacity 0.1s ease;
 }
@@ -18,14 +29,14 @@
 .link {
   text-decoration: none;
   color: black;
-
+  
   &:hover {
     color: rgb(71, 71, 71);
   }
 }
 
 .book-container {
-  width: 160px;
+  width: 120px;
   display: flex;
   flex-direction: column;
   margin: 0px 22px;
