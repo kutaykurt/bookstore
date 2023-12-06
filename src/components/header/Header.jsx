@@ -2,9 +2,17 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './header.scss';
 
-const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
 
+const Header = ({ onSearch }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    onSearch(searchTerm);
+    setSearchTerm(''); // Das Suchwort wird nach dem Klicken auf den Suchbutton geleert
+  };
+ 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -41,14 +49,16 @@ const Header = () => {
         </ul>
       </div>
       <div>
-        <form>
+        <form onSubmit={handleSearch}>
           <input
             className="input"
             type="text"
             placeholder="Titel, Autor, ISBN ..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
           />
           <div className='search-button'>
-            <i class="bi-search" />
+            <button type='submit' class="bi-search" />
           </div>
         </form>
       </div>
@@ -67,7 +77,7 @@ const Header = () => {
         </div>
         <div>
           <i class="bi bi-bag" />
-          <span>Warenkorb</span>
+          <Link to="/cart"><span>Warenkorb</span></Link>
         </div>
       </div>
     </div>

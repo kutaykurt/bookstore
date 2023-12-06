@@ -12,3 +12,10 @@
     background-color: green;
     height: 6px;
 }
+
+.no-match-text {
+    font-size: 25px;
+    color: rgb(76, 76, 76);
+    text-align: center;
+    margin-top: 100px;
+}

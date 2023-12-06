@@ -5,7 +5,6 @@ export async function fetchBooks() {
       throw new Error('Response not OK');
     }
     const data = await response.json();
-    console.log(data); // Überprüfe die geladenen Daten in der Konsole
     return data.books;
   } catch (error) {
     console.error('Error fetching books:', error);

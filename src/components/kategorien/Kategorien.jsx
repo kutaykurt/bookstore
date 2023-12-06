@@ -3,17 +3,18 @@ import { Link } from 'react-router-dom';
 import './kategorien.scss';
 import { fetchBooks } from '../fetching/fetchBooks';
 
-const Kategorien = ({ category }) => {
+const Kategorien = ({ category, searchTerm }) => {
   const [currentPosition, setCurrentPosition] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [canClick, setCanClick] = useState(true);
-  const [books, setBooks] = useState([]);
+  const [booksData, setBooksData] = useState([]); // Benennen Sie 'books' in 'booksData' um
+  const [searchBooks, setSearchBooks] = useState([]);
 
   useEffect(() => {
     async function fetchBooksData() {
       try {
         const data = await fetchBooks();
-        setBooks(data);
+        setBooksData(data); // Ändern Sie 'books' in 'booksData' um
       } catch (error) {
         console.error('Error fetching books:', error);
       }
@@ -21,9 +22,10 @@ const Kategorien = ({ category }) => {
     fetchBooksData();
   }, []);
 
-  const categoryBooks = books.filter((book) =>
+  const categoryBooks = booksData.filter((book) =>
     book.categories.includes(category)
   );
+
   const pageSize = 6;
   const totalPages = Math.ceil(categoryBooks.length / pageSize);
 

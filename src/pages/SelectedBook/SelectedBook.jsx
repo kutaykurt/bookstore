@@ -39,8 +39,6 @@ const SelectedBook = ({ books }) => {
       <img src={book.picture} alt="" />
       <p>Author: {book.author}</p>
       <p>Pages: {book.pages}</p>
-      {/* Weitere Informationen zum Buch anzeigen */}
-      <p></p>
     </div>
   );
 };
