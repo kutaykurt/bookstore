@@ -35,7 +35,7 @@ const Neuheiten = () => {
       setCanClick(false);
       setTimeout(() => {
         setCanClick(true);
-      }, 600);
+      }, 800);
     }
   };
 
@@ -48,14 +48,14 @@ const Neuheiten = () => {
       setCanClick(false);
       setTimeout(() => {
         setCanClick(true);
-      }, 600);
+      }, 800);
     }
   };
 
   useEffect(() => {
     const interval = setInterval(() => {
       handleNextSlide();
-    }, 10000);
+    }, 5000);
 
     return () => {
       clearInterval(interval);

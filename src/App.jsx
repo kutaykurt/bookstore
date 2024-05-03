@@ -1,16 +1,18 @@
-import { Route, Routes } from 'react-router-dom';
-import './App.css';
-import Header from './components/header/Header';
-import Homepage from './pages/homepage/Homepage';
-import { useEffect, useState } from 'react';
-import SearchResults from './components/searchresults/SearchResults';
-import { fetchBooks } from './components/fetching/fetchBooks';
-import SelectedBook from './pages/SelectedBook/SelectedBook';
+import React, { useState, useEffect } from "react";
+import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
+import "./App.scss";
+import Header from "./components/header/Header";
+import Homepage from "./pages/homepage/Homepage";
+import SearchResults from "./components/searchresults/SearchResults";
+import SelectedBook from "./pages/SelectedBook/SelectedBook";
+import { fetchBooks } from "./components/fetching/fetchBooks";
 
 function App() {
   const [books, setBooks] = useState([]);
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
   const [filteredBooks, setFilteredBooks] = useState([]);
+  const navigate = useNavigate(); // useNavigate Hook hinzugefügt
+  const location = useLocation();
 
   useEffect(() => {
     async function fetchBooksData() {
@@ -20,9 +22,12 @@ function App() {
     fetchBooksData();
   }, []);
 
-  const addToCart = (book) => {
-    setBooks([...books, book])
-  }
+  useEffect(() => {
+    // Reset search term when location changes to the Home page
+    if (location.pathname === "/") {
+      setSearchTerm("");
+    }
+  }, [location.pathname]);
 
   const handleSearch = (searchTerm) => {
     setSearchTerm(searchTerm);
@@ -32,14 +37,19 @@ function App() {
     );
 
     setFilteredBooks(filtered);
+
+    // Navigiere zur Suchergebnisseite, wenn Suchergebnisse vorhanden sind
+    if (filtered.length > 0) {
+      navigate("/search");
+    }
   };
-  
+
   return (
     <div className="App">
-      <div className='header-upper-background' />
-      <Header onSearch={handleSearch}/>
+      <div className="header-upper-background" />
+      <Header onSearch={handleSearch} />
       <Routes>
-      <Route
+        <Route
           path="/"
           element={
             searchTerm ? (
@@ -49,17 +59,19 @@ function App() {
                 <div className="no-match-text">Leider kein Buch gefunden</div>
               )
             ) : (
-              <Homepage />
+              <Homepage books={books} />
             )
           }
         />
         <Route
-  path="/selectedbook/:bookId"
-  element={<SelectedBook books={books} />}
-/>
-
+          path="/selectedbook/:bookId"
+          element={<SelectedBook books={books} />}
+        />
+        <Route
+          path="/search"
+          element={<SearchResults searchBooks={filteredBooks} />}
+        />
       </Routes>
-      
     </div>
   );
 }

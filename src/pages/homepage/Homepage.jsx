@@ -1,6 +1,7 @@
 import React from 'react';
 import Neuheiten from '../../components/kategorien/neuheiten/Neuheiten';
 import Kategorien from '../../components/kategorien/Kategorien';
+import './homepage.scss';
 
 const Homepage = ({ books }) => {
   return (

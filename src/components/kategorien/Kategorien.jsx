@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import './kategorien.scss';
-import { fetchBooks } from '../fetching/fetchBooks';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import "./kategorien.scss";
+import { fetchBooks } from "../fetching/fetchBooks";
 
 const Kategorien = ({ category, searchTerm }) => {
   const [currentPosition, setCurrentPosition] = useState(0);
@@ -16,7 +16,7 @@ const Kategorien = ({ category, searchTerm }) => {
         const data = await fetchBooks();
         setBooksData(data); // Ändern Sie 'books' in 'booksData' um
       } catch (error) {
-        console.error('Error fetching books:', error);
+        console.error("Error fetching books:", error);
       }
     }
     fetchBooksData();
@@ -26,7 +26,7 @@ const Kategorien = ({ category, searchTerm }) => {
     book.categories.includes(category)
   );
 
-  const pageSize = 6;
+  const pageSize = 4;
   const totalPages = Math.ceil(categoryBooks.length / pageSize);
 
   useEffect(() => {
@@ -70,13 +70,13 @@ const Kategorien = ({ category, searchTerm }) => {
         <div className="main">
           <div className="button-container">
             <i
-              className={'bi bi-arrow-left-short slide-left-button'}
+              className={"bi bi-arrow-left-short slide-left-button"}
               onClick={handlePreviousSlide}
             />
           </div>
           <div
             className={`body-container ${
-              isTransitioning ? 'fade-transition' : ''
+              isTransitioning ? "fade-transition" : ""
             }`}
             onTransitionEnd={handleTransitionEnd}
           >
@@ -93,7 +93,7 @@ const Kategorien = ({ category, searchTerm }) => {
                 >
                   <div
                     className={`book-container ${
-                      isTransitioning ? 'fade-transition' : ''
+                      isTransitioning ? "fade-transition" : ""
                     }`}
                     style={{ transitionDelay: `${index * 0.1}s` }}
                   >
@@ -103,12 +103,12 @@ const Kategorien = ({ category, searchTerm }) => {
                     <div className="informations">
                       <ul>
                         <li className="book-title bold">{book.title}</li>
-                        <li className="book-autor">{book.author}</li>
-                        <li className="book-pages">Seiten: {book.pages}</li>
                         <li className="book-type">{book.type}</li>
-                        <li className="book-price">{book.price}</li>
                         <li className="book-categories">
-                          {[...book.categories].join(' | ')}
+                          {[...book.categories].join(" | ")}
+                        </li>
+                        <li className="book-price">
+                          {book.formats[0].price.toFixed(2)} €
                         </li>
                       </ul>
                     </div>
@@ -118,7 +118,7 @@ const Kategorien = ({ category, searchTerm }) => {
           </div>
           <div className="button-container">
             <i
-              className={'bi bi-arrow-right-short slide-right-button'}
+              className={"bi bi-arrow-right-short slide-right-button"}
               onClick={handleNextSlide}
             />
           </div>

@@ -1,17 +1,29 @@
+@import "../../App.scss";
+
 .Header {
   display: flex;
   justify-content: space-around;
   align-items: center;
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.35);
   height: 80px;
+  background-color: $primary-color-black;
+  color: $primary-color-white;
+  margin-bottom: 70px;
 }
 
 .link {
   text-decoration: none;
   margin: 0px 14px;
+  color: $primary-color-white;
 
   h1 {
-    color: green;
+    .title-first-part {
+      color: $primary-color-green;
+    }
+
+    .title-second-part {
+      color: $primary-color-white;
+    }
   }
 }
 
@@ -26,15 +38,15 @@
 
     li {
       list-style-type: none;
-      color: rgb(30, 30, 30);
+      color: $primary-color-white;
 
       &:hover {
-        color: green;
+        color: $primary-color-green;
       }
     }
 
     .sale {
-      color: red;
+      color: $primary-color-green;
     }
   }
 }
@@ -43,13 +55,13 @@ form {
   display: flex;
 
   .input {
-    width: 280px;
+    width: 550px;
     height: 35px;
     padding: 4px;
   }
 
   .search-button {
-    background-color: green;
+    background-color: $primary-color-green;
     height: 35px;
     width: 35px;
     display: flex;
@@ -57,7 +69,7 @@ form {
     align-items: center;
 
     i {
-        font-size: 1.3rem;
+      font-size: 1.3rem;
     }
   }
 }
@@ -65,24 +77,34 @@ form {
 .right-list {
   display: flex;
 
-  *:hover {
-    color: green;
-  }
-
-  div {
+  .header-right-container-item {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 70px;
-    margin: 0px 5px;
+    width: 80px;
+    margin: 0px 8px;
     cursor: pointer;
+    
+    &:hover {
+      color: $primary-color-green;
+    }
+
+    .cart-link {
+      text-decoration: none;
+      color: $primary-color-white;
+      text-align: center;
+
+      &:hover {
+        color: $primary-color-green;
+      }
+    }
 
     i {
       font-size: 22px;
     }
 
     span {
-      font-size: 14px;
+      font-size: 15px;
     }
   }
 }

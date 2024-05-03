@@ -1,27 +1,37 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './header.scss';
-
+import React, { useState, useEffect } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import "./header.scss";
 
 const Header = ({ onSearch }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   const handleSearch = (e) => {
     e.preventDefault();
     onSearch(searchTerm);
-    setSearchTerm(''); // Das Suchwort wird nach dem Klicken auf den Suchbutton geleert
+    navigate(`/search?query=${searchTerm}`);
   };
- 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+
+  useEffect(() => {
+    return () => {
+      setSearchTerm(""); // Reset search term when component unmounts
+    };
+  }, []);
 
   return (
     <div className="Header">
       <div>
         <Link to="/" className="link">
-          <h1>Bookshop</h1>
+          <h1>
+            <span className="title-first-part">Book</span>
+            <span className="title-second-part">Shop</span>
+          </h1>
         </Link>
       </div>
       <div className="mid-list">
@@ -35,7 +45,7 @@ const Header = ({ onSearch }) => {
             </ul>
           )}
           <Link className="link">
-            <li className='sale'>SALE</li>
+            <li className="sale">SALE</li>
           </Link>
           <Link className="link">
             <li>eBooks</li>
@@ -57,27 +67,29 @@ const Header = ({ onSearch }) => {
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
-          <div className='search-button'>
-            <button type='submit' class="bi-search" />
+          <div className="search-button">
+            <button type="submit" className="bi-search" />
           </div>
         </form>
       </div>
       <div className="right-list">
-        <div>
-          <i class="bi bi-geo-alt" />
+        <div className="header-right-container-item">
+          <i className="bi bi-geo-alt" />
           <span>Ort</span>
         </div>
-        <div>
-          <i class="bi bi-person" />
+        <div className="header-right-container-item">
+          <i className="bi bi-person" />
           <span>Profil</span>
         </div>
-        <div>
-          <i class="bi bi-heart" />
+        <div className="header-right-container-item">
+          <i className="bi bi-heart" />
           <span>Merkzettel</span>
         </div>
-        <div>
-          <i class="bi bi-bag" />
-          <Link to="/cart"><span>Warenkorb</span></Link>
+        <div className="header-right-container-item">
+          <Link to="/cart" className="cart-link">
+            <i className="bi bi-bag" />
+            <span className="cart-text">Warenkorb</span>
+          </Link>
         </div>
       </div>
     </div>

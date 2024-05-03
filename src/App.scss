@@ -1,0 +1,27 @@
+$primary-color-green: #58c020;
+$primary-color-black: #2b2b2b;
+$primary-color-white: #fdfdfd;
+$primary-color-red: #ae4a2e;
+$primary-color-grey: #f0f0f0;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    background-color: $primary-color-white;
+}
+
+.header-upper-background {
+    background-color: $primary-color-green;
+    height: 3px;
+}
+
+.no-match-text {
+    font-size: 25px;
+    color: $primary-color-black;
+    text-align: center;
+    margin-top: 100px;
+}

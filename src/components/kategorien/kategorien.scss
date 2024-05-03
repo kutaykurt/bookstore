@@ -1,3 +1,5 @@
+@import '../../App.scss';
+
 .Kategorien {
   margin: 60px 0px;
   display: flex;
@@ -21,6 +23,7 @@
 
 .body-container {
   display: flex;
+  justify-content: space-around;
   min-width: 1200px;
   width: 100%;
   transition: opacity 0.1s ease;
@@ -28,15 +31,14 @@
 
 .link {
   text-decoration: none;
-  color: black;
+  color: $primary-color-black;
   
   &:hover {
-    color: rgb(71, 71, 71);
+    color: $primary-color-green;
   }
 }
 
 .book-container {
-  width: 120px;
   display: flex;
   flex-direction: column;
   margin: 0px 22px;
@@ -56,20 +58,27 @@
   }
 
   .informations {
-    margin-top: 10px;
-    line-height: 26px;
+    padding: 10px;
+    line-height: 21px;
+    background-color: $primary-color-grey;
+    width: 200px;
+    height: 120px;
+    border-radius: 0px 0px 10px 10px;
+    color: $primary-color-black;
 
     .bold {
-      font-weight: bold;
+      font-weight: 600;
     }
   }
 }
 
 .picture-box {
   img {
-    width: 160px;
-    background-color: rgb(242, 242, 242);
-    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    width: 200px;
+    height: 270px;
+    background-color: $primary-color-grey;
+    padding: 6px;
   }
 }
 
@@ -94,28 +103,12 @@
   font-size: 38px;
   cursor: pointer;
   height: max-content;
-  color: white;
-  background-color: green;
+  color: $primary-color-black;
+  background-color: $primary-color-white;
   border-radius: 100%;
-  border: 1px solid black;
+  border: 1px solid $primary-color-black;
   margin: 0px auto 100px auto;
   display: flex;
-}
-
-.progress-bar {
-  height: 10px;
-  background-color: #ddd;
-  margin-top: 10px;
-}
-
-.progress {
-  height: 100%;
-  background-color: #337ab7;
-  transition: width 0.3s ease;
-}
-
-.progress--full {
-  background-color: #5cb85c;
 }
 
 .body-container.fade-transition {
@@ -139,7 +132,7 @@
   text-align: right;
 
   .slider-page {
-    background-color: #5cb85c;
+    background-color: $primary-color-green;
     color: white;
     padding: 3px 12px;
     border-radius: 20px;
